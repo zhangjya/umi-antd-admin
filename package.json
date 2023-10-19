@@ -1,9 +1,12 @@
 {
   "private": true,
+  "homepage": "http://zhangjya.github.io/umi-antd-admin",
   "author": "zjy",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 max build",
     "build": "max build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "max dev",
     "format": "prettier --cache --write .",
     "postinstall": "max setup",
@@ -24,6 +27,7 @@
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
     "cross-env": "^7.0.3",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.1",
     "prettier": "^3.0.3",

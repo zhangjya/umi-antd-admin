@@ -7,6 +7,7 @@ import themeConfig from './themeConfig';
 // 主题色变量
 const PRIMARY_COLOR = '#69b1ff';
 export default defineConfig({
+  publicPath: './',
   history: {
     type: 'hash', // hash 路由
   },

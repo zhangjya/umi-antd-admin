@@ -71,6 +71,7 @@ const LoginPage = () => {
           </div>
         }
         onFinish={async (values) => {
+          history.replace('/home');
           await requestLogin.run(values);
           return true;
         }}

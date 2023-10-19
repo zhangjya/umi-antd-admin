@@ -5,7 +5,7 @@ export default {
   routes: <LayoutRouteType[]>[
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/login',
     },
     {
       name: '登录',
